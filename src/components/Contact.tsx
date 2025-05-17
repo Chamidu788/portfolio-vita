@@ -28,14 +28,14 @@ const Contact = () => {
     
     // Send email using EmailJS
     emailjs.send(
-      'YOUR_SERVICE_ID', // replace with your EmailJS service ID
-      'YOUR_TEMPLATE_ID', // replace with your EmailJS template ID
+      'service_6s8jdtc', // replace with your EmailJS service ID
+      'template_5f07pwf', // replace with your EmailJS template ID
       {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
       },
-      'YOUR_USER_ID' // replace with your EmailJS user ID
+      'lZ4WmG8_V4NhRxSlO' // replace with your EmailJS user ID
     )
       .then((response) => {
         console.log('Email successfully sent!', response);
